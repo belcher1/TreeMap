@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tree Map</title>
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+            crossorigin="anonymous">
+
+        <!-- d3.js -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+        <style>
+            #page {
+                position: fixed;
+                top: 10vh;
+            }
+            #tree-map {
+                display: flex;
+                justify-content: center;
+            }
+            #legend {
+                display: flex;
+                justify-content: center;
+            }
+            #tooltip {
+                position: absolute;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid" id="page">
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <div class="card container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div id="tree-map"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="legend"></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="title">Tree Map using D3.js</h5>
+                            <p class="card-text" id="description">Example tree map showing movie sales of each genre and movie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FreeCodeCamp CDN -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <!-- JavaScript -->
+        <script defer src ="script.js"></script>
+
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+            crossorigin="anonymous"></script>
+    </body>
+</html>

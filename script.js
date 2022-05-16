@@ -60,7 +60,7 @@ d3.json(movieDataURL, function(data) {
 
         tooltip.style("left", (d3.mouse(this)[0]) + "px")
                 .style("top", (d3.mouse(this)[1]) + "px")
-                .html('Movie: ') //+ d.data.name + '<br>' + 'Sales: $' + d.data.value)
+                .html('Movie: ') // + d.data.name + '<br>' + 'Sales: $' + d.data.value)
                 .attr("data-value", d.data.value)
     }
     var mouseleave = function(d) {
